@@ -75,6 +75,24 @@ InsureTech представляет собой страховую техноло
 - **Зона доступности 2:** Kubernetes cluster 2 + PostgreSQL master (Patroni)
 - **Active-Active архитектура:** Оба кластера активны с автоматической репликацией
 
+##### Кластерная архитектура: Независимые vs Растянутый кластер
+
+**Выбранное решение: Независимые кластеры в каждой зоне**
+
+| Критерий | Независимые кластеры | Растянутый кластер |
+|----------|---------------------|-------------------|
+| **Изоляция сбоев** | ✅ Полная изоляция зон | ❌ Каскадные сбои возможны |
+| **Производительность** | ✅ Локальность данных | ❌ Межзонные задержки |
+| **Управление** | ✅ Упрощенное troubleshooting | ❌ Сложная диагностика |
+| **Масштабирование** | ✅ Независимое в каждой зоне | ❌ Общие ресурсы |
+| **Соответствие best practices** | ✅ Cloud-native паттерн | ❌ Не рекомендуется |
+
+**Обоснование выбора:**
+- **Отказоустойчивость:** Отказ одной зоны не влияет на Kubernetes control plane второй зоны
+- **Производительность:** Минимизация межзонного трафика, локальность обработки данных
+- **Operational excellence:** Упрощенное управление, мониторинг и troubleshooting
+- **Соответствие enterprise паттернам:** Multi-AZ independent deployment - индустриальный стандарт
+
 #### Компоненты Yandex Cloud
 
 ##### Глобальная инфраструктура GSLB
@@ -85,19 +103,40 @@ InsureTech представляет собой страховую техноло
   - DNS TTL = 60 секунд для быстрого переключения при отказах
 
 ##### Архитектура трафика (3 уровня):
-1. **Пользователь → GSLB**
+
+**Уровень 1: Global Load Balancing (GSLB)**
+1. **Пользователь → GSLB (Cloud DNS)**
    - DNS запрос с географическим определением локации
    - Возврат IP адреса ближайшей зоны доступности
+   - **Метрики балансировки:**
+     - Latency-based routing (выбор зоны с минимальной задержкой)
+     - Weighted routing (распределение 50/50 между зонами)
+     - Health-based routing (исключение недоступных зон)
+   - **TTL = 60 секунд** для быстрого failover
 
-2. **GSLB → HAProxy (Зональные)**
-   - Прямая маршрутизация к зональным HAProxy экземплярам
-   - TCP-based балансировка для высокой производительности
-   - Health checks и автоматическое переключение
+**Уровень 2: Zonal Load Balancing (HAProxy)**
+2. **GSLB → HAProxy (Зональные балансировщики)**
+   - Прямая маршрутизация к HAProxy экземплярам в выбранной зоне
+   - **HAProxy конфигурация:**
+     - TCP-based балансировка (Layer 4) для высокой производительности
+     - Sticky sessions через source IP hashing если необходимо
+     - Health checks каждые 2 секунды с failover за 6 секунд
+     - Rate limiting и DDoS protection
+   - **Deployment:** По 2 HAProxy экземпляра в каждой зоне (HA)
 
-3. **HAProxy → Kubernetes Clusters → PostgreSQL**
-   - Балансировка подов через TCP соединения
+**Уровень 3: Service Level Balancing (Kubernetes)**
+3. **HAProxy → Kubernetes Services → PostgreSQL**
+   - Балансировка подов через Kubernetes Service объекты
+   - **Service mesh готовность:** TCP-based коммуникация между сервисами
+   - **Database connectivity:** Connection pooling через PgBouncer
    - Patroni кластеризация для автоматического failover PostgreSQL
-   - Автоматическое масштабирование контейнеров в namespaces
+   - Автоматическое масштабирование контейнеров (HPA) в namespaces
+
+**Преимущества многоуровневой архитектуры:**
+- **Изоляция отказов** на каждом уровне
+- **Оптимизация производительности** (географическая → зональная → сервисная)
+- **Гранулярное управление** трафиком и политиками безопасности
+- **Horizontal scaling** на каждом уровне балансировки
 
 ##### Управляемые и собственные сервисы
 - **Managed Kubernetes:** Автоматическое управление кластерами в двух зонах доступности
@@ -106,6 +145,59 @@ InsureTech представляет собой страховую техноло
   - Время переключения менее 30 секунд
   - Active-active развертывание с синхронной репликацией
   - Автоматическое восстановление после сбоев
+
+##### Детальная конфигурация PostgreSQL + Patroni
+
+**Архитектура кластера:**
+```yaml
+# PostgreSQL Patroni Cluster Configuration
+Cluster Setup:
+  - Zone 1: PostgreSQL Primary + Patroni Agent + PgBouncer
+  - Zone 2: PostgreSQL Standby + Patroni Agent + PgBouncer
+  - Etcd cluster: Распределенный consensus для leader election
+  - HAProxy: Database connection load balancing
+```
+
+**Репликация и синхронизация:**
+- **Replication Mode:** Синхронная репликация для критических данных
+- **synchronous_commit = on:** Обеспечивает консистентность данных между зонами
+- **Replication lag monitoring:** < 5 секунд в нормальном режиме
+- **WAL shipping:** Непрерывная передача Write-Ahead Log между зонами
+
+**Конфигурация Patroni для отказоустойчивости:**
+```yaml
+# Key Patroni Configuration Parameters
+postgresql:
+  parameters:
+    synchronous_commit: 'on'
+    synchronous_standby_names: 'standby1'
+    max_wal_senders: 10
+    wal_keep_segments: 1000
+
+patroni:
+  ttl: 30                    # Leader lease time
+  loop_wait: 10              # Health check interval
+  retry_timeout: 30          # Election timeout
+  maximum_lag_on_failover: 1048576  # Max lag for failover
+```
+
+**Backup и восстановление:**
+- **Continuous WAL archiving:** WAL-E к Yandex Object Storage
+- **Full backups:** Ежедневно в 02:00 с retention 30 дней
+- **Point-in-time recovery (PITR):** Восстановление на любую секунду за последние 30 дней
+- **Backup encryption:** AES-256 шифрование для соответствия требованиям безопасности
+
+**Connection pooling и performance:**
+- **PgBouncer deployment:** По экземпляру в каждой зоне для минимизации latency
+- **Connection pool размер:** 100 connections per zone
+- **Transaction pooling:** Оптимизация для high-throughput приложений
+- **Query performance monitoring:** pg_stat_statements + автоматический анализ slow queries
+
+**Мониторинг PostgreSQL кластера:**
+- **Patroni REST API:** Мониторинг состояния кластера и leader election
+- **Database metrics:** Prometheus exporters для PostgreSQL + PgBouncer
+- **Replication monitoring:** Постоянное отслеживание lag и sync status
+- **Automated alerting:** Критические алерты при lag > 10 секунд или failover событиях
 - **HAProxy Load Balancing:** Самоуправляемые экземпляры в каждой зоне
 - **TCP-based межсервисная коммуникация:** Оптимизированное взаимодействие между микросервисами
 
@@ -119,6 +211,46 @@ InsureTech представляет собой страховую техноло
   - Минимизация сетевых накладных расходов
   - Оптимизированная производительность межсервисного взаимодействия
 - **Service Mesh готовность:** Архитектура подготовлена для интеграции с Istio/Linkerd
+
+#### Стратегия отказоустойчивости и требования RTO/RPO
+
+**Архитектурный подход: Active-Active с автоматическим failover**
+
+##### Целевые показатели надежности
+| Метрика | Целевое значение | Реализация |
+|---------|------------------|------------|
+| **RTO (Recovery Time Objective)** | < 30 секунд | Patroni автоматическое переключение лидера |
+| **RPO (Recovery Point Objective)** | < 5 минут | Синхронная репликация PostgreSQL |
+| **Uptime SLA** | 99.95% | Active-Active развертывание |
+| **MTTR (Mean Time To Repair)** | < 15 минут | Автоматические health checks + alerting |
+
+##### Failover сценарии и стратегии
+
+**1. Database Failover (PostgreSQL + Patroni)**
+- **Триггер:** Недоступность primary PostgreSQL instance
+- **Время переключения:** < 30 секунд (автоматически)
+- **Механизм:** Patroni leader election + synchronous replication
+- **Восстановление данных:** Автоматическое, потеря данных < 5 минут
+
+**2. Zone Failover (GSLB)**
+- **Триггер:** Недоступность целой зоны доступности
+- **Время переключения:** 60-120 секунд (DNS TTL)
+- **Механизм:** Health checks + автоматическое исключение зоны из GSLB
+- **Восстановление:** Автоматическое включение зоны после восстановления
+
+**3. Application Failover (HAProxy + Kubernetes)**
+- **Триггер:** Недоступность application pods
+- **Время переключения:** < 6 секунд
+- **Механизм:** HAProxy health checks + Kubernetes readiness probes
+- **Восстановление:** Автоматический restart pods + HPA scaling
+
+##### Мониторинг отказоустойчивости
+- **Health checks интервалы:**
+  - HAProxy → Kubernetes Services: 2 секунды
+  - GSLB → HAProxy: 30 секунд
+  - Patroni cluster health: 10 секунд
+- **Alerting:** Prometheus + AlertManager с escalation за 5 минут
+- **Dashboards:** Real-time мониторинг RTO/RPO метрик через Grafana
 
 ### Преимущества горизонтального масштабирования
 

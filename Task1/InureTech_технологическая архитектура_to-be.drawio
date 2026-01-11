@@ -13,8 +13,10 @@
         <mxCell id="WzUtGOkYhYCkFp43Qlcn-51" parent="1" style="vsdxID=6;fillColor=none;gradientColor=none;shape=stencil(vVNdD4IgFP01POIQms1nq//BEpVF4q6U9u/DoFJxPdjm2/04cO65cBDL2oo3AlHSGtAX0cncVIgdEKWyrgRIYyPEjohlhQZRgr7VucsbPiCH6Krvww29O0eGE5Q8XJaSaPcqnByWw9k2wWNZRFMHhzc+SlwhQHhATDxBj3kvWwzacCN1PSFXHEqBLRcuFC8nrbYTognKfjol65GSNIn28SL5SjGf2efL2UBMwO1nWykl3M1mzxJ8ib/eZHkrG8j47RMbfA1WSKWcP8f9uSFtyZmZHZ8=);strokeColor=#5282ff;spacingTop=-3;spacingBottom=-3;spacingLeft=-3;spacingRight=-3;points=[];labelBackgroundColor=none;rounded=0;html=1;whiteSpace=wrap;container=0;" vertex="1">
           <mxGeometry height="359.99" width="918.8" x="-39.21" y="580.01" as="geometry" />
         </mxCell>
-        <mxCell id="Zcm5tQwCMB2YyKj0-IPv-33" edge="1" parent="1" source="Zcm5tQwCMB2YyKj0-IPv-16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="Zcm5tQwCMB2YyKj0-IPv-27">
-          <mxGeometry relative="1" as="geometry" />
+        <mxCell id="Zcm5tQwCMB2YyKj0-IPv-33" edge="1" parent="1" source="Zcm5tQwCMB2YyKj0-IPv-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.848;exitY=0.897;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.764;entryY=0.027;entryDx=0;entryDy=0;entryPerimeter=0;" target="Zcm5tQwCMB2YyKj0-IPv-27">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="340" y="590" as="targetPoint" />
+          </mxGeometry>
         </mxCell>
         <mxCell id="Zcm5tQwCMB2YyKj0-IPv-34" connectable="0" parent="Zcm5tQwCMB2YyKj0-IPv-33" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];container=0;" value="TCP" vertex="1">
           <mxGeometry relative="1" x="-0.0566" y="2" as="geometry">
@@ -97,7 +99,7 @@
         <mxCell id="WzUtGOkYhYCkFp43Qlcn-30" parent="1" style="shape=image;verticalLabelPosition=bottom;verticalAlign=top;imageAspect=0;aspect=fixed;image=data:image/svg+xml,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzMiIgaGVpZ2h0PSIzMiIgdmlld0JveD0iMCAwIDMyIDMyIiBmaWxsPSJub25lIj4mI3hhOzxwYXRoIGQ9Ik0wIDE2QzAgNy4xNjM0NCA3LjE2MzQ0IDAgMTYgMFYwQzI0LjgzNjYgMCAzMiA3LjE2MzQ0IDMyIDE2VjE2QzMyIDI0LjgzNjYgMjQuODM2NiAzMiAxNiAzMlYzMkM3LjE2MzQ0IDMyIDAgMjQuODM2NiAwIDE2VjE2WiIgZmlsbD0iIzUyODJGRiIvPiYjeGE7PHBhdGggZD0iTTE3IDE3SDE5LjNDMTkuNyAxNy42IDIwLjMgMTggMjEgMThDMjIuMSAxOCAyMyAxNy4xIDIzIDE2QzIzIDE0LjkgMjIuMSAxNCAyMSAxNEMyMC4zIDE0IDE5LjYgMTQuNCAxOS4zIDE1SDE3VjExSDE5LjNDMTkuNyAxMS42IDIwLjMgMTIgMjEgMTJDMjIuMSAxMiAyMyAxMS4xIDIzIDEwQzIzIDguOSAyMi4xIDggMjEgOEMyMC4zIDggMTkuNiA4LjQgMTkuMyA5SDE3QzE1LjkgOSAxNSA5LjkgMTUgMTFWMTUuM0wxMCAxMlYxNUg3VjE3SDEwVjIwTDE1IDE2LjdWMjFDMTUgMjIuMSAxNS45IDIzIDE3IDIzSDE5LjNDMTkuNyAyMy42IDIwLjMgMjQgMjEgMjRDMjIuMSAyNCAyMyAyMy4xIDIzIDIyQzIzIDIwLjkgMjIuMSAyMCAyMSAyMEMyMC4zIDIwIDE5LjYgMjAuNCAxOS4zIDIxSDE3VjE3WiIgZmlsbD0id2hpdGUiLz4mI3hhOzwvc3ZnPg==;" value="" vertex="1">
           <mxGeometry height="36" width="36" x="285.65999999999997" y="603.11" as="geometry" />
         </mxCell>
-        <mxCell id="WzUtGOkYhYCkFp43Qlcn-32" edge="1" parent="1" source="WzUtGOkYhYCkFp43Qlcn-36" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="WzUtGOkYhYCkFp43Qlcn-37">
+        <mxCell id="WzUtGOkYhYCkFp43Qlcn-32" edge="1" parent="1" source="WzUtGOkYhYCkFp43Qlcn-42" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.626;exitY=0.897;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.234;entryY=0.018;entryDx=0;entryDy=0;entryPerimeter=0;" target="WzUtGOkYhYCkFp43Qlcn-37">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="WzUtGOkYhYCkFp43Qlcn-33" connectable="0" parent="WzUtGOkYhYCkFp43Qlcn-32" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];container=0;" value="TCP" vertex="1">
@@ -188,6 +190,184 @@
             </Array>
             <mxPoint x="440" y="240" as="sourcePoint" />
             <mxPoint x="430.3000000000002" y="351" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="kubernetes-config-comment" parent="1" style="whiteSpace=wrap;html=1;fillColor=#f0f8ff;strokeColor=#5282ff;strokeWidth=2;fontFamily=Arial;fontSize=14;align=left;verticalAlign=top;rounded=1;arcSize=13;" value="&lt;div style=&quot;font-size: 1px&quot;&gt;&lt;font style=&quot;font-size:16px;font-family:Arial;color:#000000;direction:ltr;letter-spacing:0px;line-height:120%;opacity:1&quot;&gt;&lt;b&gt;&amp;nbsp; &amp;nbsp; КОНФИГУРАЦИЯ РАЗВЕРТЫВАНИЯ&amp;nbsp;&lt;/b&gt;&lt;/font&gt;&lt;b style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255)); font-size: 16px; letter-spacing: 0px;&quot;&gt;KUBERNETES&lt;/b&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 1px&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 1px&quot;&gt;&lt;font style=&quot;font-size:14px;font-family:Arial;color:#000000;direction:ltr;letter-spacing:0px;line-height:120%;opacity:1&quot;&gt;&lt;b style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255)); font-size: 16px;&quot;&gt;&amp;nbsp; &amp;nbsp;&amp;nbsp;&lt;/b&gt;✓ &lt;b&gt;Архитектура:&lt;/b&gt; Независимые кластеры в каждой зоне&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 1px&quot;&gt;&lt;font style=&quot;font-size:12px;font-family:Arial;color:#666666;direction:ltr;letter-spacing:0px;line-height:120%;opacity:1&quot;&gt;&lt;b style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255)); font-size: 16px;&quot;&gt;&amp;nbsp; &amp;nbsp;&amp;nbsp;&lt;/b&gt;- Полная изоляция сбоев&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 1px&quot;&gt;&lt;font style=&quot;font-size:12px;font-family:Arial;color:#666666;direction:ltr;letter-spacing:0px;line-height:120%;opacity:1&quot;&gt;&lt;b style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255)); font-size: 16px;&quot;&gt;&amp;nbsp; &amp;nbsp;&amp;nbsp;&lt;/b&gt;- Упрощенное управление и troubleshooting&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 1px&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 1px&quot;&gt;&lt;font style=&quot;font-size:14px;font-family:Arial;color:#000000;direction:ltr;letter-spacing:0px;line-height:120%;opacity:1&quot;&gt;&lt;b style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255)); font-size: 16px;&quot;&gt;&amp;nbsp; &amp;nbsp;&amp;nbsp;&lt;/b&gt;✓ &lt;b&gt;Namespace:&lt;/b&gt; InsureTech namespace&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 1px&quot;&gt;&lt;font style=&quot;font-size:12px;font-family:Arial;color:#666666;direction:ltr;letter-spacing:0px;line-height:120%;opacity:1&quot;&gt;&lt;b style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255)); font-size: 16px;&quot;&gt;&amp;nbsp; &amp;nbsp;&amp;nbsp;&lt;/b&gt;- Изоляция сервисов и ресурсов&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 1px&quot;&gt;&lt;font style=&quot;font-size:12px;font-family:Arial;color:#666666;direction:ltr;letter-spacing:0px;line-height:120%;opacity:1&quot;&gt;&lt;b style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255)); font-size: 16px;&quot;&gt;&amp;nbsp; &amp;nbsp;&amp;nbsp;&lt;/b&gt;- Независимое масштабирование компонентов&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 1px&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 1px&quot;&gt;&lt;font style=&quot;font-size:14px;font-family:Arial;color:#000000;direction:ltr;letter-spacing:0px;line-height:120%;opacity:1&quot;&gt;&lt;b style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255)); font-size: 16px;&quot;&gt;&amp;nbsp; &amp;nbsp;&amp;nbsp;&lt;/b&gt;✓ &lt;b&gt;Стратегия:&lt;/b&gt; Active-Active&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 1px&quot;&gt;&lt;font style=&quot;font-size:12px;font-family:Arial;color:#666666;direction:ltr;letter-spacing:0px;line-height:120%;opacity:1&quot;&gt;&lt;b style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255)); font-size: 16px;&quot;&gt;&amp;nbsp; &amp;nbsp;&amp;nbsp;&lt;/b&gt;- RTO &amp;lt; 30 сек, RPO &amp;lt; 5 мин&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 1px&quot;&gt;&lt;font style=&quot;font-size:12px;font-family:Arial;color:#666666;direction:ltr;letter-spacing:0px;line-height:120%;opacity:1&quot;&gt;&lt;b style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255)); font-size: 16px;&quot;&gt;&amp;nbsp; &amp;nbsp;&amp;nbsp;&lt;/b&gt;- HAProxy → K8s Services → Pods&lt;/font&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="190" width="450" x="-40" y="1080" as="geometry" />
+        </mxCell>
+        <mxCell id="gslb-health-check-zone1" edge="1" parent="1" source="WzUtGOkYhYCkFp43Qlcn-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeDasharray=5,5;strokeColor=#ff9800;strokeWidth=2;exitX=0.25;exitY=1;exitDx=0;exitDy=0;" target="Zcm5tQwCMB2YyKj0-IPv-7">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="379" y="300" />
+              <mxPoint x="160" y="300" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="gslb-health-check-zone1-label" connectable="0" parent="gslb-health-check-zone1" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=10;fontColor=#ff9800;" value="Health Check 30s" vertex="1">
+          <mxGeometry relative="1" x="-0.1" y="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="gslb-health-check-zone2" edge="1" parent="1" source="WzUtGOkYhYCkFp43Qlcn-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeDasharray=5,5;strokeColor=#ff9800;strokeWidth=2;exitX=1.003;exitY=0.488;exitDx=0;exitDy=0;entryX=0.614;entryY=0.003;entryDx=0;entryDy=0;entryPerimeter=0;exitPerimeter=0;" target="WzUtGOkYhYCkFp43Qlcn-31">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="760" y="199" />
+              <mxPoint x="760" y="300" />
+            </Array>
+            <mxPoint x="790" y="270" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="gslb-health-check-zone2-label" connectable="0" parent="gslb-health-check-zone2" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=10;fontColor=#ff9800;" value="Health Check 30s" vertex="1">
+          <mxGeometry relative="1" x="-0.1" y="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="haproxy-health-check-zone1" edge="1" parent="1" source="Zcm5tQwCMB2YyKj0-IPv-27" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeDasharray=3,3;strokeColor=#4caf50;strokeWidth=2;exitX=-0.013;exitY=0.473;exitDx=0;exitDy=0;exitPerimeter=0;" target="Zcm5tQwCMB2YyKj0-IPv-5">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="110" y="644" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="haproxy-health-check-zone1-label" connectable="0" parent="haproxy-health-check-zone1" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=10;fontColor=#4caf50;" value="2s" vertex="1">
+          <mxGeometry relative="1" x="-0.1" y="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="haproxy-health-check-zone2" edge="1" parent="1" source="WzUtGOkYhYCkFp43Qlcn-37" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeDasharray=3,3;strokeColor=#4caf50;strokeWidth=2;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0.192;entryY=1.002;entryDx=0;entryDy=0;entryPerimeter=0;" target="WzUtGOkYhYCkFp43Qlcn-42">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="611" y="647" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="haproxy-health-check-zone2-label" connectable="0" parent="haproxy-health-check-zone2" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=10;fontColor=#4caf50;" value="2s" vertex="1">
+          <mxGeometry relative="1" x="-0.1" y="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="k8s-probes-zone1" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeDasharray=2,2;strokeColor=#2196f3;strokeWidth=1;entryX=0.218;entryY=0.008;entryDx=0;entryDy=0;entryPerimeter=0;" target="Zcm5tQwCMB2YyKj0-IPv-27">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="267" y="520" />
+            </Array>
+            <mxPoint x="304" y="520" as="sourcePoint" />
+            <mxPoint x="480" y="450" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="k8s-probes-zone1-label" connectable="0" parent="k8s-probes-zone1" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=9;fontColor=#2196f3;" value="Readiness/Liveness 10s" vertex="1">
+          <mxGeometry relative="1" x="0.1" y="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="k8s-probes-zone2" edge="1" parent="1" source="WzUtGOkYhYCkFp43Qlcn-42" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeDasharray=2,2;strokeColor=#2196f3;strokeWidth=1;exitX=0.845;exitY=0.897;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.772;entryY=-0.02;entryDx=0;entryDy=0;entryPerimeter=0;" target="WzUtGOkYhYCkFp43Qlcn-37">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+            <mxPoint x="970" y="560" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="k8s-probes-zone2-label" connectable="0" parent="k8s-probes-zone2" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=9;fontColor=#2196f3;" value="Readiness/Liveness 10s" vertex="1">
+          <mxGeometry relative="1" x="0.1" y="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="patroni-health-check-zone1" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeDasharray=4,4;strokeColor=#9c27b0;strokeWidth=2;entryX=1;entryY=0.5;entryDx=0;entryDy=0;exitX=-0.01;exitY=0.789;exitDx=0;exitDy=0;exitPerimeter=0;">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+            <mxPoint x="234.98999999999978" y="844.98269" as="sourcePoint" />
+            <mxPoint x="45.83000000000038" y="844.605" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="patroni-health-check-zone1-label" connectable="0" parent="patroni-health-check-zone1" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=9;fontColor=#9c27b0;" value="Leader Election 10s" vertex="1">
+          <mxGeometry relative="1" y="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="patroni-health-check-zone2" edge="1" parent="1" source="WzUtGOkYhYCkFp43Qlcn-43" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeDasharray=4,4;strokeColor=#9c27b0;strokeWidth=2;exitX=0.729;exitY=1.014;exitDx=0;exitDy=0;entryX=1.013;entryY=0.47;entryDx=0;entryDy=0;entryPerimeter=0;exitPerimeter=0;" target="WzUtGOkYhYCkFp43Qlcn-52">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="812" y="920" />
+              <mxPoint x="100" y="920" />
+              <mxPoint x="100" y="845" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="patroni-health-check-zone2-label" connectable="0" parent="patroni-health-check-zone2" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=9;fontColor=#9c27b0;" value="Replication Lag 10s" vertex="1">
+          <mxGeometry relative="1" y="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="health-checks-legend" parent="1" style="whiteSpace=wrap;html=1;fillColor=#fffde7;strokeColor=#f57c00;strokeWidth=2;fontFamily=Arial;fontSize=12;align=left;verticalAlign=top;rounded=1;" value="&lt;div style=&quot;font-size: 1px&quot;&gt;&lt;font style=&quot;font-size:14px;font-family:Arial;color:#000000;direction:ltr;letter-spacing:0px;line-height:120%;opacity:1&quot;&gt;&lt;b&gt;HEALTH CHECKS LEGEND&lt;/b&gt;&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 1px&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 1px&quot;&gt;&lt;font style=&quot;font-size:12px;font-family:Arial;color:#ff9800;direction:ltr;letter-spacing:0px;line-height:120%;opacity:1&quot;&gt;- - - - - GSLB Health Checks (30s)&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 1px&quot;&gt;&lt;font style=&quot;font-size:12px;font-family:Arial;color:#4caf50;direction:ltr;letter-spacing:0px;line-height:120%;opacity:1&quot;&gt;- - - HAProxy Health Checks (2s)&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 1px&quot;&gt;&lt;font style=&quot;font-size:12px;font-family:Arial;color:#2196f3;direction:ltr;letter-spacing:0px;line-height:120%;opacity:1&quot;&gt;. . . . Kubernetes Probes (10s)&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 1px&quot;&gt;&lt;font style=&quot;font-size:12px;font-family:Arial;color:#9c27b0;direction:ltr;letter-spacing:0px;line-height:120%;opacity:1&quot;&gt;-·-·- Patroni Health Checks (10s)&lt;/font&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="100" width="230" x="-240" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="client-failover-legend" parent="1" style="whiteSpace=wrap;html=1;fillColor=#e1f5fe;strokeColor=#0288d1;strokeWidth=2;fontFamily=Arial;fontSize=12;align=left;verticalAlign=top;rounded=1;" value="&lt;div style=&quot;font-size: 1px&quot;&gt;&lt;font style=&quot;font-size:14px;font-family:Arial;color:#000000;direction:ltr;letter-spacing:0px;line-height:120%;opacity:1&quot;&gt;&lt;b&gt;CLIENT FAILOVER STRATEGY&lt;/b&gt;&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 1px&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 1px&quot;&gt;&lt;font style=&quot;font-size:12px;font-family:Arial;color:#28a745;direction:ltr;letter-spacing:0px;line-height:120%;opacity:1&quot;&gt;——— Normal Operation Flow&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 1px&quot;&gt;&lt;font style=&quot;font-size:12px;font-family:Arial;color:#dc3545;direction:ltr;letter-spacing:0px;line-height:120%;opacity:1&quot;&gt;- - - Failover Flow&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 1px&quot;&gt;&lt;font style=&quot;font-size:12px;font-family:Arial;color:#ffc107;direction:ltr;letter-spacing:0px;line-height:120%;opacity:1&quot;&gt;··· Degraded Mode&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 1px&quot;&gt;&lt;font style=&quot;font-size:10px;font-family:Arial;color:#666666;direction:ltr;letter-spacing:0px;line-height:120%;opacity:1&quot;&gt;RTO &amp;lt; 30s, RPO &amp;lt; 5min&lt;/font&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="120" width="250" x="879.9999999999999" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="client-normal-flow-zone1" edge="1" parent="1" source="Zcm5tQwCMB2YyKj0-IPv-39" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#28a745;strokeWidth=3;exitX=0.013;exitY=0.917;exitDx=0;exitDy=0;exitPerimeter=0;">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="280" y="95" />
+              <mxPoint x="280" y="140" />
+              <mxPoint x="120" y="140" />
+            </Array>
+            <mxPoint x="279.03999999999996" y="93.00000000000001" as="sourcePoint" />
+            <mxPoint x="120" y="360.02" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="client-normal-flow-zone1-label" connectable="0" parent="client-normal-flow-zone1" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=11;fontColor=#28a745;fontFamily=Arial;" value="Primary Path" vertex="1">
+          <mxGeometry relative="1" x="0.1" y="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="client-normal-flow-zone2" edge="1" parent="1" source="Zcm5tQwCMB2YyKj0-IPv-39" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#28a745;strokeWidth=2;entryX=0.824;entryY=0.003;entryDx=0;entryDy=0;entryPerimeter=0;exitX=1.004;exitY=0.867;exitDx=0;exitDy=0;exitPerimeter=0;" target="WzUtGOkYhYCkFp43Qlcn-31">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="841" y="93" />
+            </Array>
+            <mxPoint x="590" y="93" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="client-normal-flow-zone2-label" connectable="0" parent="client-normal-flow-zone2" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=11;fontColor=#28a745;fontFamily=Arial;" value="Backup Path" vertex="1">
+          <mxGeometry relative="1" x="0.1" y="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="client-failover-zone1-to-zone2" edge="1" parent="1" source="Zcm5tQwCMB2YyKj0-IPv-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#dc3545;strokeWidth=2;strokeDasharray=5,5;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" target="WzUtGOkYhYCkFp43Qlcn-31">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="460" y="680" />
+              <mxPoint x="460" y="450" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="client-failover-zone1-to-zone2-label" connectable="0" parent="client-failover-zone1-to-zone2" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=10;fontColor=#dc3545;fontFamily=Arial;" value="Zone 1 Failure → Zone 2" vertex="1">
+          <mxGeometry relative="1" y="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="client-failover-browser-to-zone2" edge="1" parent="1" source="Zcm5tQwCMB2YyKj0-IPv-39" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#dc3545;strokeWidth=2;strokeDasharray=5,5;exitX=1.008;exitY=0.7;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.719;entryY=0.002;entryDx=0;entryDy=0;entryPerimeter=0;" target="WzUtGOkYhYCkFp43Qlcn-31">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="562" y="80" />
+              <mxPoint x="800" y="80" />
+            </Array>
+            <mxPoint x="800" y="340" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="client-failover-browser-to-zone2-label" connectable="0" parent="client-failover-browser-to-zone2" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=10;fontColor=#dc3545;fontFamily=Arial;" value="DNS Failover (60s)" vertex="1">
+          <mxGeometry relative="1" x="0.2" y="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="failover-timeline" parent="1" style="whiteSpace=wrap;html=1;fillColor=#fff3e0;strokeColor=#ff6f00;strokeWidth=2;fontFamily=Arial;fontSize=11;align=left;verticalAlign=top;rounded=1;" value="&lt;div style=&quot;font-size: 1px&quot;&gt;&lt;font style=&quot;font-size:13px;font-family:Arial;color:#000000;direction:ltr;letter-spacing:0px;line-height:120%;opacity:1&quot;&gt;&lt;b&gt;FAILOVER TIMELINE&lt;/b&gt;&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 1px&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 1px&quot;&gt;&lt;font style=&quot;font-size:11px;font-family:Arial;color:#000000;direction:ltr;letter-spacing:0px;line-height:120%;opacity:1&quot;&gt;⏱️ &lt;b&gt;0-30s&lt;/b&gt; Failure Detection&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 1px&quot;&gt;&lt;font style=&quot;font-size:11px;font-family:Arial;color:#000000;direction:ltr;letter-spacing:0px;line-height:120%;opacity:1&quot;&gt;🔄 &lt;b&gt;30-60s&lt;/b&gt; DNS Update (TTL)&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 1px&quot;&gt;&lt;font style=&quot;font-size:11px;font-family:Arial;color:#000000;direction:ltr;letter-spacing:0px;line-height:120%;opacity:1&quot;&gt;✅ &lt;b&gt;&amp;lt;90s&lt;/b&gt; Service Restored&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 1px&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 1px&quot;&gt;&lt;font style=&quot;font-size:9px;font-family:Arial;color:#666666;direction:ltr;letter-spacing:0px;line-height:120%;opacity:1&quot;&gt;User sessions preserved via GSLB&lt;/font&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="110" width="220" x="-240" y="160" as="geometry" />
+        </mxCell>
+        <mxCell id="client-retry-mechanism" parent="1" style="shape=ellipse;whiteSpace=wrap;html=1;fillColor=#e8f5e8;strokeColor=#4caf50;strokeWidth=2;fontFamily=Arial;fontSize=10;align=center;verticalAlign=middle;" value="&lt;div style=&quot;font-size: 1px&quot;&gt;&lt;font style=&quot;font-size:10px;font-family:Arial;color:#000000;direction:ltr;letter-spacing:0px;line-height:120%;opacity:1&quot;&gt;&lt;b&gt;Client&lt;/b&gt;&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 1px&quot;&gt;&lt;font style=&quot;font-size:10px;font-family:Arial;color:#000000;direction:ltr;letter-spacing:0px;line-height:120%;opacity:1&quot;&gt;&lt;b&gt;Retry Logic&lt;/b&gt;&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 1px&quot;&gt;&lt;font style=&quot;font-size:8px;font-family:Arial;color:#666666;direction:ltr;letter-spacing:0px;line-height:120%;opacity:1&quot;&gt;3x attempts&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 1px&quot;&gt;&lt;font style=&quot;font-size:8px;font-family:Arial;color:#666666;direction:ltr;letter-spacing:0px;line-height:120%;opacity:1&quot;&gt;Exponential backoff&lt;/font&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="100" x="80" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="client-retry-connection" edge="1" parent="1" source="client-retry-mechanism" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#ffc107;strokeWidth=1;strokeDasharray=3,3;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=-0.004;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" target="Zcm5tQwCMB2YyKj0-IPv-39">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
           </mxGeometry>
         </mxCell>
       </root>
